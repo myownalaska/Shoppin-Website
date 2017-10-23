@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="slider">
+        <ul><!-- {% static 'images/1.jpg' %}-->
+            <li class="yellow" style="background-image: url('{% static 'images/0.jpg' %}')">
+                <h3>ДИЗАЙН</h3>
+                <h2>Орнаменты и рисунки известных художников</h2>
+                <a href="#" class="btn-more">Узнать больше</a>
+            </li>
+            <li class="purple" style="background-image: url('{% static 'images/01.jpg' %}')">
+                <h3>Оригинальность исполнения</h3>
+                <h2>Практичность, а самое главное - долговечность</h2>
+                <a href="#" class="btn-more">Узнать больше</a>
+            </li>
+            <li class="yellow" style="background-image: url('{% static 'images/02.jpg' %}')">
+                <h3>ARABIA и IITTALA</h3>
+                <h2>Предмет национальной гордости финнов</h2>
+                <a href="#" class="btn-more">Узнать больше</a>
+            </li>
+        </ul>
+    </div>
+
+ <div id="body">
+        <div class="container">
+            <div class="last-products">
+                <h2>НОВИНКИ</h2>
+                <section class="products">
+
+                    {% for product_image in products_images %}
+                        {% include 'pages/product_item.html' %}
+                    {% endfor %}
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

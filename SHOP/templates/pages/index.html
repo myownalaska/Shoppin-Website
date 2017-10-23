@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BOKAL</title>
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+    </head>
+ <body>
+        <header id="header">
+                 <div class="container">
+                     <a href="index.html" title="BOKAL">BOKAL</a>
+                         <div class="right-links">
+                         <ul>
+                            <li><a href="cart.html"><span class="ico-products"></span>Корзина</a></li>
+                            <li><a href="enter.html"><span class="ico-signout"></span>Вход</a></li>
+                         </ul>
+                         </div>
+                 </div>
+        </header>
+
+    <nav id="menu">
+        <div class="container">
+            <div class="trigger"></div>
+            <ul>
+
+            </ul>
+        </div>
+        
+    </nav> 
+
+    <div id="slider">
+        <ul><!-- {% static 'images/1.jpg' %}-->
+            <li class="yellow" style="background-image: url('{% static 'images/0.jpg' %}')">
+                <h3>ДИЗАЙН</h3>
+                <h2>Орнаменты и рисунки известных художников</h2>
+                <a href="#" class="btn-more">Узнать больше</a>
+            </li>
+            <li class="purple" style="background-image: url('{% static 'images/01.jpg' %}')">
+                <h3>Оригинальность исполнения</h3>
+                <h2>Практичность, а самое главное - долговечность</h2>
+                <a href="#" class="btn-more">Узнать больше</a>
+            </li>
+            <li class="yellow" style="background-image: url('{% static 'images/02.jpg' %}')">
+                <h3>ARABIA и IITTALA</h3>
+                <h2>Предмет национальной гордости финнов</h2>
+                <a href="#" class="btn-more">Узнать больше</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="body">
+        <div class="container">
+            <div class="last-products">
+                <h2>НОВИНКИ</h2>
+                <section class="products">
+                    <article>
+                        <img src="{% static 'images/1.jpg' %}" alt="">
+                        <h3>Кружка MUMI</h3>
+                        <h4>5000 тг.</h4>
+                        <a href="cart.html" class="btn-add">В корзину</a>
+                    </article>
+                    <article>
+                        <img src="{% static 'images/11.jpg' %}" alt="">
+                        <h3>Стакан</h3>
+                        <h4>5000 тг.</h4>
+                        <a href="cart.html" class="btn-add">В корзину</a>
+                    </article>
+                    <article>
+                        <img src="{% static 'images/12.jpg' %}" alt="">
+                        <h3>Кувшин</h3>
+                        <h4>10000 тг.</h4>
+                        <a href="cart.html" class="btn-add">В корзину</a>
+                    </article>
+                    <article>
+                        <img src="{% static 'images/13.jpg' %}" alt="">
+                        <h3>Тарелка</h3>
+                        <h4>7500 тг.</h4>
+                        <a href="cart.html" class="btn-add">В корзину</a>
+                    </article>
+                    <article>
+                        <img src="{% static 'images/14.jpg' %}" alt="">
+                        <h3>Стакан</h3>
+                        <h4>4500 тг.</h4>
+                        <a href="cart.html" class="btn-add">В корзину</a>
+                    </article>
+                    <article>
+                        <img src="{% static 'images/114.jpg' %}" alt="">
+                        <h3>Стакан</h3>
+                        <h4>5500 тг.</h4>
+                        <a href="cart.html" class="btn-add">В корзину</a>
+                    </article>
+                </section>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/mumi.dom.9"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/mummi_kz/" data-wow-delay=".5s"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+
+                    <p class="heart">
+                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Astana
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
